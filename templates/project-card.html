@@ -1,0 +1,14 @@
+{{define "project-card"}}
+<div class="project-card">
+  <h3 class="project-title">{{.Title}}</h3>
+  <p class="project-description">{{.Description}}</p>
+  <div class="project-tags">
+    {{range .Tags}}
+    <span class="tag">{{.}}</span>
+    {{end}}
+  </div>
+  {{if .Link}}
+  <a href="{{.Link}}" class="project-link" target="_blank" rel="noopener noreferrer">View project →</a>
+  {{end}}
+</div>
+{{end}}

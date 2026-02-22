@@ -1,0 +1,13 @@
+{
+  "name": "Francis Patron",
+  "tagline": "Junior Software Engineer",
+  "bio": "Software Engineer specializing in C++ systems development, distributed architectures, and simulation. Experience building real-time data pipelines, high-throughput database systems, and software-in-the-loop testing environments in Linux. Passionate about solving complex systems problems.",
+  "location": "Salt Lake City, UT",
+  "availability": true,
+  "years_of_experience": 3,
+  "email": "francisj.patron@gmail.com",
+  "github": "https://github.com/fpatron",
+  "linkedin": "https://linkedin.com/in/francispatron",
+  "x": "https://x.com/francis_patron",
+  "profile_photo": "/static/profile.png"
+}

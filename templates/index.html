@@ -1,0 +1,35 @@
+{{define "content"}}
+<main>
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <p class="hero-greeting">Hi, I'm</p>
+      <h1 class="hero-name">{{.About.Name}}</h1>
+      <p class="hero-tagline">{{.About.Tagline}}</p>
+      <a href="#projects" class="btn btn-primary">View Projects</a>
+    </div>
+  </section>
+
+  <section id="about"
+           hx-get="/partials/about"
+           hx-trigger="revealed"
+           hx-swap="innerHTML">
+    <div class="loading"><span class="htmx-indicator">Loading…</span></div>
+  </section>
+
+  <section id="projects"
+           hx-get="/partials/projects"
+           hx-trigger="revealed"
+           hx-swap="innerHTML">
+    <div class="loading"><span class="htmx-indicator">Loading…</span></div>
+  </section>
+
+  <section id="interests"
+           hx-get="/partials/interests"
+           hx-trigger="revealed"
+           hx-swap="innerHTML">
+    <div class="loading"><span class="htmx-indicator">Loading…</span></div>
+  </section>
+
+  {{template "contact" .}}
+</main>
+{{end}}

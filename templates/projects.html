@@ -1,0 +1,14 @@
+{{define "projects"}}
+<div class="projects-inner">
+  <h2 class="section-title">Projects</h2>
+  {{if .Projects}}
+  <div class="projects-grid">
+    {{range .Projects}}
+    {{template "project-card" .}}
+    {{end}}
+  </div>
+  {{else}}
+  <p class="empty-state">Projects coming soon.</p>
+  {{end}}
+</div>
+{{end}}

@@ -1,0 +1,18 @@
+{{define "interests"}}
+<div class="interests-inner">
+  <h2 class="section-title">Interests</h2>
+  {{if .Interests}}
+  <div class="interests-grid">
+    {{range .Interests}}
+    <div class="interest-card">
+      <span class="interest-emoji">{{.Emoji}}</span>
+      <h3 class="interest-label">{{.Label}}</h3>
+      <p class="interest-description">{{.Description}}</p>
+    </div>
+    {{end}}
+  </div>
+  {{else}}
+  <p class="empty-state">Interests coming soon.</p>
+  {{end}}
+</div>
+{{end}}

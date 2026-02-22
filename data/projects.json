@@ -1,0 +1,9 @@
+[
+  {
+    "title": "Portfolio Website",
+    "description": "This site. A minimal Go + HTMX portfolio running in Docker.",
+    "tags": ["Go", "HTMX", "Docker", "nginx"],
+    "link": "https://github.com/fpatron/website",
+    "image": ""
+  }
+]

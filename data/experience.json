@@ -1,0 +1,42 @@
+[
+  {
+    "role": "Software Engineer",
+    "company": "L3Harris Technologies, CNES",
+    "company_url": "https://www.l3harris.com/",
+    "start_date": "Jul 2023",
+    "end_date": "Present",
+    "description": [
+    ],
+    "type": "work"
+  },
+  {
+    "role": "Software Engineer Intern",
+    "company": "L3Harris Technologies, CNES",
+    "company_url": "https://www.l3harris.com/",
+    "start_date": "2021",
+    "end_date": "2022",
+    "date_ranges": [
+      {"start_date": "2021", "end_date": "2021"},
+      {"start_date": "2022", "end_date": "2022"}
+    ],
+    "description": [
+      "Worked in Communication Networks Effects and Simulation group (CNES)",
+      "Developed linter in Go for configuration files, used in CI/CD Jenkins pipelines",
+      "Built health monitoring system in Python for a distributed simulation",
+      "Built a dry run functionality in Go to test components are ready to run"
+    ],
+    "type": "work"
+  },
+  {
+    "role": "B.S. Computer Science",
+    "company": "University of Puerto Rico, Mayaguez",
+    "company_url": "https://www.uprm.edu/portales/en/",
+    "start_date": "2018",
+    "end_date": "2023",
+    "description": [
+      "Graduated with high honors",
+      "Team leader in autonomous drone competition"
+    ],
+    "type": "education"
+  }
+]

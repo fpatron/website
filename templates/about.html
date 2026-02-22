@@ -1,0 +1,55 @@
+{{define "about"}}
+<div class="about-inner">
+  <h2 class="section-title">About Me</h2>
+  <p class="about-bio">{{.About.Bio}}</p>
+  {{if .About.Location}}
+  <p class="about-meta">📍 {{.About.Location}}{{if .About.Availability}} &nbsp;·&nbsp; <span class="available">Open to opportunities</span>{{end}}</p>
+  {{end}}
+  <div class="skills">
+    {{range .Skills}}
+    <span class="skill-badge">{{.}}</span>
+    {{end}}
+  </div>
+
+  {{if .Experience}}
+  <h3 class="timeline-heading">Experience</h3>
+  <div class="timeline">
+    {{range .Experience}}
+    <div class="timeline-item">
+      <div class="timeline-dot timeline-dot--{{.Type}}">
+        {{if eq .Type "work"}}
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="2" y="7" width="20" height="14" rx="2"/>
+          <path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/>
+          <line x1="12" y1="12" x2="12" y2="12"/>
+          <line x1="8" y1="12" x2="16" y2="12"/>
+        </svg>
+        {{else}}
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
+          <path d="M6 12v5c0 0 2.333 3 6 3s6-3 6-3v-5"/>
+        </svg>
+        {{end}}
+      </div>
+      <div class="timeline-content">
+        <p class="timeline-role">{{.Role}}</p>
+        {{if .CompanyURL}}
+        <a href="{{.CompanyURL}}" class="timeline-company" target="_blank" rel="noopener noreferrer">{{.Company}}</a>
+        {{else}}
+        <p class="timeline-company-plain">{{.Company}}</p>
+        {{end}}
+        <p class="timeline-dates">{{.StartDate}} – {{.EndDate}}</p>
+        {{if .Description}}
+        <ul class="timeline-desc">
+          {{range .Description}}
+          <li>{{.}}</li>
+          {{end}}
+        </ul>
+        {{end}}
+      </div>
+    </div>
+    {{end}}
+  </div>
+  {{end}}
+</div>
+{{end}}
