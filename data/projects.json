@@ -5,5 +5,26 @@
     "tags": ["Go", "HTMX", "Docker", "nginx"],
     "link": "https://github.com/fpatron/website",
     "image": ""
+  },
+  {
+    "title": "Better Json",
+    "description": "Code without comments is like a detective novel without clues. With betterjson you can finally annotate your JSON files with all the witty remarks and crucial explanations they deserve. After all, clarity is king.",
+    "tags": ["Go", "JSON", "CI/CD"],
+    "link": "https://github.com/fpatron/betterjson",
+    "image": ""
+  },
+  {
+    "title": "Metadata Fix",
+    "description": "Desktop application for restoring metadata to photos exported from Google Photos. When you download your library via Google Takeout, the original EXIF data (GPS coordinates, timestamps) is stripped from the images and stored separately in sidecar JSON files. This tool reads those JSON files and writes the metadata back into the image files.",
+    "tags": ["Rust", "JSON", "Google Photos", "iCloud", "EXIF"],
+    "link": "https://github.com/fpatron/media-metadata-fix",
+    "image": ""
+  },
+  {
+    "title": "Stratum 1 NTP Server",
+    "description": "GPS-disciplined Network Time Protocol (NTP) server implementation for ESP32 microcontrollers. The server derives time directly from a GNSS receiver and uses a hardware Pulse Per Second (PPS) signal for sub-millisecond timestamping.",
+    "tags": ["C++", "esp32", "pps", "gps", "ntp"],
+    "link": "https://github.com/fpatron/esp32-gps-ntp",
+    "image": ""
   }
 ]

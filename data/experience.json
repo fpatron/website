@@ -1,31 +1,35 @@
 [
   {
     "role": "Software Engineer",
-    "company": "L3Harris Technologies, CNES",
+    "company": "L3Harris Technologies",
     "company_url": "https://www.l3harris.com/",
     "logo": "/static/l3h_logo.png",
     "start_date": "Jul 2023",
+    "location": "Salt Lake City, UT",
     "end_date": "Present",
     "description": [
+      "Designed and maintained components of a high-fidelity, large-scale distributed SITL radio communications simulation, driving feature development and system reliability improvements.",
+      "Redesigned database schema with synthetic sharding to resolve a multi-year data loss issue, achieving 10x write throughput at 30,000+ writes/sec with improved read latency through parallel queries.",
+      "Built a data ingestion platform with automatic Protobuf schema inference and database table evolution, eliminating manual schema management for multiple independent services.",
+      "Developed a high-throughput CLI tool for migrating data between database clusters, reducing migration time from hours to minutes for multi-million row datasets, replacing a legacy process that previously took days.",
+      "Implemented a distributed network monitoring application using active UDP probing to record real-time packet loss and latency across WAN and ad-hoc tactical networks, providing situational awareness during field tests and enabling post-flight performance reporting.",
+      "Developed an AFSIM plugin modeling high-fidelity communications link behavior (including latency, packet loss, and routing) across simulated platforms in contested environments, delivering higher-fidelity comms capabilities to an internal customer.",
+      "Owned end-to-end software release pipelines across multiple projects, leveraging Jenkins CI/CD and Ansible automation to build and distribute RPM and DEB packages cross-platform.",
+      "Developed a Raspberry Pi-based field test device integrating IMU, GPS, and PPS sensors; configured as a Stratum 1 time server with time-series data logging and statistics collection from equipment under test."
     ],
     "type": "work"
   },
   {
     "role": "Software Engineer Intern",
-    "company": "L3Harris Technologies, CNES",
+    "company": "L3Harris Technologies",
     "company_url": "https://www.l3harris.com/",
     "logo": "/static/l3h_logo.png",
-    "start_date": "2021",
-    "end_date": "2022",
-    "date_ranges": [
-      {"start_date": "2021", "end_date": "2021"},
-      {"start_date": "2022", "end_date": "2022"}
-    ],
+    "dates": ["Summer 2021", "Summer 2022"],
+    "location": "Salt Lake City, UT",
     "description": [
-      "Worked in Communication Networks Effects and Simulation group (CNES)",
-      "Developed linter in Go for configuration files, used in CI/CD Jenkins pipelines",
-      "Built health monitoring system in Python for a distributed simulation",
-      "Built a dry run functionality in Go to test components are ready to run"
+      "Developed a configuration files linter, used in CI/CD Jenkins pipelines",
+      "Implemented health monitoring for a distributed simulation system",
+      "Built a dry run functionality to test components are ready to run"
     ],
     "type": "work"
   },
@@ -33,6 +37,7 @@
     "role": "B.S. Computer Science",
     "company": "University of Puerto Rico, Mayaguez",
     "company_url": "https://www.uprm.edu/portales/en/",
+    "location": "Mayaguez, PR",
     "logo": "/static/uprm_logo.png",
     "start_date": "2018",
     "end_date": "2023",

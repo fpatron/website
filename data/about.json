@@ -1,7 +1,7 @@
 {
   "name": "Francis Patron",
   "tagline": "Software Engineer",
-  "bio": "Software Engineer specializing in C++ systems development, distributed architectures, and simulation. Experience building real-time data pipelines, high-throughput database systems, and software-in-the-loop testing environments in Linux. Passionate about solving complex systems problems.",
+  "bio": "Software Engineer specializing in C++ and Go systems development, distributed architectures, and simulation. Experience building real-time data pipelines, high-throughput database systems, and SITL simulation environments in Linux. Passionate about solving complex systems problems.",
   "location": "Salt Lake City, UT",
   "availability": true,
   "years_of_experience": 3,

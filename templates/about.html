@@ -7,7 +7,12 @@
   {{end}}
   <div class="skills">
     {{range .Skills}}
-    <span class="skill-badge">{{.}}</span>
+    <div class="skill-group">
+      <span class="skill-category">{{.Category}}</span>
+      <div class="skill-badges">
+        {{range .Skills}}<span class="skill-badge">{{.}}</span>{{end}}
+      </div>
+    </div>
     {{end}}
   </div>
 
@@ -42,7 +47,7 @@
           {{if .Logo}}<img src="{{.Logo}}" alt="{{.Company}} logo" class="timeline-logo">{{end}}{{.Company}}
         </p>
         {{end}}
-        <p class="timeline-dates">{{.StartDate}} – {{.EndDate}}</p>
+        <p class="timeline-dates">{{if .Dates}}{{range $i, $d := .Dates}}{{if $i}} &nbsp;·&nbsp; {{end}}{{$d}}{{end}}{{else}}{{.StartDate}} – {{.EndDate}}{{end}}{{if .Location}} &nbsp;·&nbsp; 📍 {{.Location}}{{end}}</p>
         {{if .Description}}
         <ul class="timeline-desc">
           {{range .Description}}

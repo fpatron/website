@@ -28,6 +28,12 @@ type Interest struct {
 	Description string `json:"description"`
 }
 
+// SkillCategory represents a labeled group of skills loaded from data/skills.json.
+type SkillCategory struct {
+	Category string   `json:"category"`
+	Skills   []string `json:"skills"`
+}
+
 // Experience represents a single entry in data/experience.json.
 type Experience struct {
 	Role        string   `json:"role"`
@@ -36,6 +42,8 @@ type Experience struct {
 	Logo        string   `json:"logo"`
 	StartDate   string   `json:"start_date"`
 	EndDate     string   `json:"end_date"`
+	Dates       []string `json:"dates"`
+	Location    string   `json:"location"`
 	Description []string `json:"description"`
 	Type        string   `json:"type"` // "work" or "education"
 }
@@ -60,7 +68,7 @@ type PageData struct {
 	About      About
 	Projects   []Project
 	Interests  []Interest
-	Skills     []string
+	Skills     []SkillCategory
 	Experience []Experience
 }
 
@@ -92,7 +100,7 @@ func New(fsys fs.FS) (*Handler, error) {
 		return nil, fmt.Errorf("load interests.json: %w", err)
 	}
 
-	var skills []string
+	var skills []SkillCategory
 	if err := loadJSON(fsys, "data/skills.json", &skills); err != nil {
 		return nil, fmt.Errorf("load skills.json: %w", err)
 	}

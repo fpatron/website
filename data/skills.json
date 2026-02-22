@@ -1,1 +1,9 @@
-["C++", "Go", "Python", "Linux", "CMake", "Docker", "Jenkins", "Git", "TCP/IP", "Distributed Systems", "Simulation", "SQL"]
+[
+  { "category": "Languages", "skills": ["C++", "Go", "Python", "Bash"] },
+  { "category": "Infrastructure", "skills": ["Linux", "Docker", "VMs", "CMake", "Jenkins", "CI/CD", "Ansible", "Vagrant", "Git"] },
+  { "category": "Databases", "skills": ["SQL", "NoSQL", "ScyllaDB"] },
+  { "category": "Protocols", "skills": ["TCP", "UDP", "gRPC", "ZMQ", "PubSub"] },
+  { "category": "Concepts", "skills": ["Distributed Systems", "Simulation"] },
+  { "category": "Hardware", "skills": ["IMU", "PPS", "GPS"] },
+  { "category": "Spoken", "skills": ["English", "Spanish"] }
+]
