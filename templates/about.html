@@ -34,9 +34,13 @@
       <div class="timeline-content">
         <p class="timeline-role">{{.Role}}</p>
         {{if .CompanyURL}}
-        <a href="{{.CompanyURL}}" class="timeline-company" target="_blank" rel="noopener noreferrer">{{.Company}}</a>
+        <a href="{{.CompanyURL}}" class="timeline-company" target="_blank" rel="noopener noreferrer">
+          {{if .Logo}}<img src="{{.Logo}}" alt="{{.Company}} logo" class="timeline-logo">{{end}}{{.Company}}
+        </a>
         {{else}}
-        <p class="timeline-company-plain">{{.Company}}</p>
+        <p class="timeline-company-plain">
+          {{if .Logo}}<img src="{{.Logo}}" alt="{{.Company}} logo" class="timeline-logo">{{end}}{{.Company}}
+        </p>
         {{end}}
         <p class="timeline-dates">{{.StartDate}} – {{.EndDate}}</p>
         {{if .Description}}

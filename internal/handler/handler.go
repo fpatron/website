@@ -30,6 +30,7 @@ type Experience struct {
 	Role        string   `json:"role"`
 	Company     string   `json:"company"`
 	CompanyURL  string   `json:"company_url"`
+	Logo        string   `json:"logo"`
 	StartDate   string   `json:"start_date"`
 	EndDate     string   `json:"end_date"`
 	Description []string `json:"description"`

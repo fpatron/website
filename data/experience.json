@@ -3,6 +3,7 @@
     "role": "Software Engineer",
     "company": "L3Harris Technologies, CNES",
     "company_url": "https://www.l3harris.com/",
+    "logo": "/static/l3h_logo.png",
     "start_date": "Jul 2023",
     "end_date": "Present",
     "description": [
@@ -13,6 +14,7 @@
     "role": "Software Engineer Intern",
     "company": "L3Harris Technologies, CNES",
     "company_url": "https://www.l3harris.com/",
+    "logo": "/static/l3h_logo.png",
     "start_date": "2021",
     "end_date": "2022",
     "date_ranges": [
@@ -31,6 +33,7 @@
     "role": "B.S. Computer Science",
     "company": "University of Puerto Rico, Mayaguez",
     "company_url": "https://www.uprm.edu/portales/en/",
+    "logo": "/static/uprm_logo.png",
     "start_date": "2018",
     "end_date": "2023",
     "description": [
