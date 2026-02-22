@@ -7,6 +7,9 @@ import (
 	"io/fs"
 	"log"
 	"net/http"
+	"os"
+
+	gomail "gopkg.in/mail.v2"
 )
 
 // Project represents a portfolio project loaded from data/projects.json.
@@ -157,6 +160,23 @@ func (h *Handler) Contact(w http.ResponseWriter, r *http.Request) {
 	email := r.FormValue("email")
 	message := r.FormValue("message")
 	log.Printf("contact form submission: name=%q email=%q message_len=%d", name, email, len(message))
+
+	gmailUser := os.Getenv("GMAIL_USER")
+	gmailPass := os.Getenv("GMAIL_APP_PASSWORD")
+	if gmailUser != "" && gmailPass != "" {
+		m := gomail.NewMessage()
+		m.SetHeader("From", gmailUser)
+		m.SetHeader("To", gmailUser)
+		m.SetHeader("Reply-To", email)
+		m.SetHeader("Subject", fmt.Sprintf("[francispatron.dev] New message from %s", name))
+		m.SetBody("text/plain", fmt.Sprintf("Sent from francispatron.com\n\nName: %s\nEmail: %s\n\n%s", name, email, message))
+
+		d := gomail.NewDialer("smtp.gmail.com", 465, gmailUser, gmailPass)
+		if err := d.DialAndSend(m); err != nil {
+			log.Printf("failed to send email: %v", err)
+		}
+	}
+
 	w.Header().Set("Content-Type", "text/html; charset=utf-8")
 	fmt.Fprint(w, `<div class="contact-success"><p>Thanks for reaching out — I'll be in touch soon.</p></div>`)
 }
