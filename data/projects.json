@@ -7,10 +7,10 @@
     "image": ""
   },
   {
-    "title": "Better Json",
-    "description": "Code without comments is like a detective novel without clues. With betterjson you can finally annotate your JSON files with all the witty remarks and crucial explanations they deserve. After all, clarity is king.",
+    "title": "Golang Jsonc",
+    "description": "Extension of the JSON data format that allows single and multi line comments.",
     "tags": ["Go", "JSON", "CI/CD"],
-    "link": "https://github.com/fpatron/betterjson",
+    "link": "https://github.com/fpatron/jsonc",
     "image": ""
   },
   {
